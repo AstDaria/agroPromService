@@ -1,0 +1,8 @@
+
+/*DIVASOFT BRANDING*/
+#developed-by {margin: 5px 0;}
+#dvs-logo {background: url("img/branding.png") no-repeat scroll 0 0; display:inline-block;width: 76px;height: 18px;}
+.dvs-branding {width:76px; float:left; height:18px;}
+.dvs-counter {width:18px; float:right; height:18px;}
+.dvs-copyright {margin-left:76px; margin-right:18px; height:18px; line-height: 18px;}
+.dvs-copyright p{margin:0; padding:0; text-align:center; height:18px; color:#fff;}

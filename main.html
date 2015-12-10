@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/jcarousel.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- SCRIPTS ========================================================================== -->
+
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script> 
+			$(function() {
+				win_w = $(window).width();
+				$(".jcarousel.main-slider li").css("width", win_w+"px");
+				$('.jcarousel').jcarousel({
+					animation: 'slow'
+				});
+				$('.jcarousel.serf-slider').jcarousel({
+					animation: {
+						duration: 1500,
+						easing:   'linear',
+						complete: function() {
+						}
+					}
+				});
+				$('.jcarousel.products-slider').jcarousel({
+					animation: {
+						duration: 800,
+						easing:   'linear',
+						complete: function() {
+						}
+					}
+				});
+				$('.jcarousel').jcarouselAutoscroll({
+					target: '+=1'
+				});
+				
+				$('.jcarousel-prev').jcarouselControl({
+					target: '-=1'
+				});
+
+				$('.jcarousel-next').jcarouselControl({
+					target: '+=1'
+				});
+				$('.jcarousel').jcarousel({
+					wrap: 'circular'
+				});
+			});		
+			
+		</script>
+        <!-- /SCRIPTS ========================================================================== -->
+    </head>
+    <body>
+		<div id="top">
+			<div class="container">
+				<div class="grid-3">
+					<h1 id="logo"><a href=""><img src="img/logo1.png" title="Агропромсервис" alt="Агропромсервис" ></a></h1>
+				</div>
+				<div class="grid-9">
+					<ul id="main-menu"><!--
+						--><li class="active"><a href="">Главная</a></li><!--
+						--><li><a href="">Продукция</a></li><!--
+						--><li><a href="">Полезная информация</a></li><!--
+						--><li><a href="">Контакты</a></li><!--
+					--></ul>
+				</div>
+			</div>
+		</div>
+		<div id="slider">
+			<div class="jcarousel main-slider">
+				<ul>
+					<li style="background-image: url('img/1.png');" >
+						<div class="slider-content">
+							<div class="container">
+								<h2>Не содержит ГМО</h2>
+								<p>Наша продукция абсолютна натуральна</p>
+								<div class="logomarka"><img src="img/logo4.png"></div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url('img/2.png')">
+						<div class="slider-content">
+							<div class="container">
+								<h2>Не содержит ГМО</h2>
+								<p>Наша продукция абсолютна натуральна</p>
+								<div class="logomarka"><img src="img/logo4.png"></div>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url('img/3.png')">
+						<div class="slider-content">
+							<div class="container">
+								<h2>Не содержит ГМО</h2>
+								<p>Наша продукция абсолютна натуральна</p>
+								<div class="logomarka"><img src="img/logo4.png"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- Controls -->
+			<a class="jcarousel-prev" href="#"><</a>
+			<a class="jcarousel-next" href="#">></a>
+		</div>
+		<div id="aboutcompany">
+			<div class="container">
+				<div class="grid-12">
+					<h2 class="title"><div>ООО «Агропромсервис»</div></h2>
+					<p>Мы с 2008 года производим, фасуем и занимаемся реализацией сливочного масла, спреда и маргарина. С ними делают бутерброды, крема для торта, ими заправляют каши и многое другое.</p>
+				</div>	
+				<div class="clear"> </div>
+				<div class="grid-8">
+					<div class="autoline">
+						<img src="img/icon1.png">
+						<h3>Автоматизированное производство</h3>
+						<p>В своем распоряжении имеет автоматическую линию по производству спредов и маргаринов, позволяющую вырабатывать и расфасовывать продукцию  высокого качества различной жирности в соответствии с ГОСТами и Техническим Регламентом Таможенного Союза.</p>
+					</div>
+					<div class="autoline">
+						<img src="img/icon2.png">
+						<h3>Соответствие ЕАС</h3>
+						<p>Вся продукция предприятия имеет декларации соответствия ЕАС.</p>
+					</div>
+					<div class="autoline">
+						<img src="img/icon3.png">
+						<h3>Сертификация НАССР</h3>
+						<p>Производство ООО «Агропромсервис» сертифицировано по стандарту НАССР ISO 2200 ГОСТ ИСО 22000-2007 – системе менеджмента			безопасности пищевой продукции.</p>
+					</div>
+				</div>
+				<div class="grid-4">
+					<div class="jcarousel serf-slider">
+						<ul>
+							<li>
+								<img src="img/serf1.png">
+							</li>
+							<li>
+								<img src="img/serf2.png">
+							</li>
+							<li>
+								<img src="img/serf3.png">
+							</li>	
+							<li>
+								<img src="img/serf4.png">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="benefits">
+			<div class="container">
+				<div class="grid-12">
+					<div class="circle">
+						<i class="fa-leaf fa"></i>
+						<span>Без ГМО</span>
+					</div>
+					<div class="circle">
+						<i class="fa-thumbs-o-up fa"></i>
+						<span>Полезно</span>
+					</div>
+					<div class="circle">
+						<i class="fa-cutlery fa"></i>
+						<span>Вкусно</span>
+					</div>
+					<div class="circle">
+						<i class="fa-database fa"></i>
+						<span>Без трансжиров</span>
+					</div>
+					<div class="circle">
+						<i class="fa-check-circle-o fa"></i>
+						<span>Натурально</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="products">
+			<div class="container"> 
+				<div class="grid-12">
+					<h2 class="title"><div>Наши продукты</div></h2>
+					<p>Мы создаем только натуральный продукт, не содержащий компонентов, полученных из генетически модифицированных продуктов, без консервантов и транс изомеров жирных кислот</p>
+					<div class="jcarousel products-slider">
+						<ul>
+							<li class="imgblock">
+								<a href="">
+									<div class="cover-img" style="background-image: url('img/prod1.png')">
+									<img src="img/empty.png">
+									</div>
+									<div class="box-products">
+										<div class="minibox">
+											<i class="fa-leaf fa"> </i>
+										</div>
+											<h3>Спред растительно-жировой</h3>
+									</div>
+								</a>
+							</li>
+							<li class="imgblock">
+								<a href="">
+									<div class="cover-img" style="background-image: url('img/prod2.png')">
+									<img src="img/empty.png">
+									</div>
+									<div class="box-products">
+										<div class="minibox">
+											<i class="fa-thumbs-o-up fa"> </i>
+										</div>
+											<h3>Маргарин сливочный</h3>
+									</div>
+								</a>
+							</li>
+							<li class="imgblock">
+								<a href="">
+									<div class="cover-img" style="background-image: url('img/prod3.png')">
+									<img src="img/empty.png">
+									</div>
+									<div class="box-products">
+										<div class="minibox">
+											<i class="fa-check-circle-o fa"> </i>
+										</div>
+											<h3>Масло сладкосливочное несоленое</h3>
+									</div>
+								</a>
+							</li>	
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="inform">
+			<div class="container">
+				<div class="grid-12">
+					<h2 class="title"><div>Полезная информация</div></h2>
+					<p>Интересные факты о нашей продукции. <a href="">Посмотреть всё</a></p>
+					<a href="" class="item">
+						<img src="img/inform.png">
+						<h3>Что такое спред и чем он лучше сливочного масла?</h3>
+						<p>Спредоброд – на завтрак. Вкус и польза одновременно. Большинство людей, толком не знакомых со спредом, на вопрос «Что же это такое?» – отвечают примерно так: «Наверное, новое сливочное масло». Или: «Это что-то вроде маргарина»… А как на самом деле?</p>
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div id="contacts">
+			<div class="container">
+				<div class="grid-12">
+					<i class="fa-list fa"> </i>
+					<p>ООО «Агропромсервис»<br>Юридический адрес: РФ, 440034, г.Пенза, ул. Калинина, д.108Б.<br>Адрес производства: РФ, 440528, Пензенская область, Пензенский район, с. Болословка, ул. Королева, д.22.<br>Тел.: +7 (841-2) 239-009, факс: +7 (841-2) 239-004.</p>
+				</div>
+			</div>
+		</div>
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JItNn3d3iQWuJIHSrDrjhlw-qJc1dB59&width=1200&height=300"></script>
+		</div>
+		<div id="copy">
+			<div class="container">
+				<div class="grid-12">
+					<div id="developed-by">
+						<div class="dvs-counter"><img src="img/hit.png"></div>
+						<div class="dvs-branding"><a href="http://www.divasoft.ru/" target="_blank" title="Компания &laquo;Дивасофт&raquo; &mdash; мы делаем сайты!" id="dvs-logo"></a></div>
+						<div class="dvs-copyright"><p>&copy; ООО «Агропромсервис» 2014</p></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

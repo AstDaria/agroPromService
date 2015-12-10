@@ -1,0 +1,45 @@
+<!-- Шаблон формы -->
+<div class="control-group">
+  <label class="control-label" for="inputName">Ваше имя:</label>
+  <div class="controls">
+    <input id="inputName" name="myname" type="text" class="validate['required'] inputbox"/>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="inputEmail">Ваш Email:</label>
+  <div class="controls">
+    <input id="inputEmail" type="text" name="email" class="validate['email'] inputbox">
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="inputTheme">Тема:</label>
+  <div class="controls">
+    <input id="inputTheme" name="theme" type="text" class="validate['required'] inputbox"/>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="inputText">Сообщение:</label>
+  <div class="controls">
+    <textarea id="inputText" name="mesage" class="validate['required'] inputbox" ></textarea>
+  </div>
+</div>
+{CAPTCHA}
+<div class="control-button">
+  <input class="button" type="submit" value="Отправить" />
+</div>
+<div class="clear"></div>
+<!-- Шаблон email сообщения -->
+
+<p><strong>Тема:</strong>&nbsp;{theme}</p>
+<p><strong>Имя:</strong>&nbsp;{myname}</p>
+<p><strong>Email:</strong>&nbsp;{email}</p>
+<p><strong>Текст сообщения:</strong><br />{mesage}</p>
+<p>&nbsp;</p>
+<p>Это сообщение отправлено автоматически с сайта %% <a href="#"></a></p>
+<p>Отвечайте по адресу указанному в «контактной информации».</p>
+
+<!-- Шаблон сообщения при отсылке формы -->
+<p><strong>Тема:</strong>&nbsp;{theme}</p>
+<p><strong>Имя:</strong>&nbsp;{myname}</p>
+<p><strong>Email:</strong>&nbsp;{email}</p>
+<p><strong>Текст сообщения:</strong><br />{mesage}</p>

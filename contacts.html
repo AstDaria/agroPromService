@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/jcarousel.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- SCRIPTS ========================================================================== -->
+
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script> 
+			$(function() {
+				win_w = $(window).width();
+				$(".jcarousel.main-slider li").css("width", win_w+"px");
+				$('.jcarousel').jcarousel({
+					animation: 'slow'
+				});
+				$('.jcarousel.serf-slider').jcarousel({
+					animation: {
+						duration: 1500,
+						easing:   'linear',
+						complete: function() {
+						}
+					}
+				});
+				$('.jcarousel.products-slider').jcarousel({
+					animation: {
+						duration: 800,
+						easing:   'linear',
+						complete: function() {
+						}
+					}
+				});
+				$('.jcarousel').jcarouselAutoscroll({
+					target: '+=1'
+				});
+				
+				$('.jcarousel-prev').jcarouselControl({
+					target: '-=1'
+				});
+
+				$('.jcarousel-next').jcarouselControl({
+					target: '+=1'
+				});
+				$('.jcarousel').jcarousel({
+					wrap: 'circular'
+				});
+			});		
+			
+		</script>
+        <!-- /SCRIPTS ========================================================================== -->
+    </head>
+    <body>
+		<div id="top">
+			<div class="container">
+				<div class="grid-3">
+					<h1 id="logo"><a href=""><img src="img/logo1.png" title="Агропромсервис" alt="Агропромсервис" ></a></h1>
+				</div>
+				<div class="grid-9">
+					<ul id="main-menu"><!--
+						--><li><a href="">Главная</a></li><!--
+						--><li><a href="">Продукция</a></li><!--
+						--><li><a href="">Полезная информация</a></li><!--
+						--><li class="active"><a href="">Контакты</a></li><!--
+					--></ul>
+				</div>
+			</div>
+		</div>
+		<div id="prod">
+		<div id="contacts" class="fon">
+			<div class="container">
+				<div class="grid-12">
+					<h2>Контактная информация</h2>
+					<i class="fa-list fa green"> </i>
+						<p>ООО «Агропромсервис»<br>Юридический адрес: РФ, 440034, г.Пенза, ул. Калинина, д.108Б.<br>Адрес производства: РФ, 440528, Пензенская область, Пензенский район, с. Болословка, ул. Королева, д.22.<br>Тел.: +7 (841-2) 239-009, факс: +7 (841-2) 239-004.</p>
+				</div>
+			</div>
+		</div>
+			<div id="contact">
+				<div class="container">
+					<div class="grid-12">
+						<div class="control-group">
+							<h2>Обратная связь</h2>
+						  <label class="control-label" for="inputName">Ваше имя:</label>
+						  <div class="controls">
+							<input id="inputName" name="myname" type="text" class="validate['required'] inputbox"/>
+						  </div>
+						</div>
+						<div class="control-group">
+						  <label class="control-label" for="inputEmail">Ваш Email:</label>
+						  <div class="controls">
+							<input id="inputEmail" type="text" name="email" class="validate['email'] inputbox">
+						  </div>
+						</div>
+						<div class="control-group">
+						  <label class="control-label" for="inputTheme">Тема:</label>
+						  <div class="controls">
+							<input id="inputTheme" name="theme" type="text" class="validate['required'] inputbox"/>
+						  </div>
+						</div>
+						<div class="control-group">
+						  <label class="control-label" for="inputText">Сообщение:</label>
+						  <div class="controls">
+							<textarea id="inputText" name="mesage" class="validate['required'] inputbox" ></textarea>
+						  </div>
+						</div>
+						{CAPTCHA}
+						<div class="control-button">
+						  <input class="button" type="submit" value="Отправить" />
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			
+		
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JItNn3d3iQWuJIHSrDrjhlw-qJc1dB59&width=1200&height=300"></script>
+		</div>
+		</div>
+		<div id="copy">
+			<div class="container">
+				<div class="grid-12">
+					<div id="developed-by">
+						<div class="dvs-counter"><img src="img/hit.png"></div>
+						<div class="dvs-branding"><a href="http://www.divasoft.ru/" target="_blank" title="Компания &laquo;Дивасофт&raquo; &mdash; мы делаем сайты!" id="dvs-logo"></a></div>
+						<div class="dvs-copyright"><p>&copy; ООО «Агропромсервис» 2014</p></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
